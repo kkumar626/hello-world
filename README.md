@@ -9,3 +9,5 @@ This line is added on GitHub
 This is a second line added on Github
 
 This is another line on my Local Git Repo.
+
+This line is added when a new branch is created locally.
