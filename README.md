@@ -7,3 +7,5 @@ This repository is built step by step in the tutorial.
 This line is added on GitHub
 
 This is a second line added on Github
+
+This is another line on my Local Git Repo.
