@@ -1,12 +1,54 @@
-Country,Capital,Currency,Language
-United States,"Washington, D.C.",USD,English
-France,Paris,EUR,French
-Japan,Tokyo,JPY,Japanese
-Germany,Berlin,EUR,German
-United Kingdom,London,GBP,English
-Canada,Ottawa,CAD,English/French
-Australia,Canberra,AUD,English
-India,New Delhi,INR,Hindi/English
-Brazil,Brasília,BRL,Portuguese
-China,Beijing,CNY,Mandarin
-Thailand,Bangkok,THB,Thai
+Continent,Country,Capital,Currency,Language
+Asia,Japan,Tokyo,JPY,Japanese
+Asia,China,Beijing,CNY,Mandarin
+Asia,India,New Delhi,INR,Hindi/English
+Asia,Thailand,Bangkok,THB,Thai
+Asia,South Korea,Seoul,KRW,Korean
+Asia,Indonesia,Jakarta,IDR,Indonesian
+Asia,Vietnam,Hanoi,VND,Vietnamese
+Asia,Malaysia,Kuala Lumpur,MYR,Malay
+Asia,Philippines,Manila,PHP,Filipino/English
+Asia,Saudi Arabia,Riyadh,SAR,Arabic
+Asia,United Arab Emirates,Abu Dhabi,AED,Arabic
+Asia,Singapore,Singapore,SGD,English/Malay/Chinese/Tamil
+Europe,France,Paris,EUR,French
+Europe,Germany,Berlin,EUR,German
+Europe,United Kingdom,London,GBP,English
+Europe,Italy,Rome,EUR,Italian
+Europe,Spain,Madrid,EUR,Spanish
+Europe,Netherlands,Amsterdam,EUR,Dutch
+Europe,Sweden,Stockholm,SEK,Swedish
+Europe,Switzerland,Bern,CHF,German/French/Italian
+Europe,Poland,Warsaw,PLN,Polish
+Europe,Portugal,Lisbon,EUR,Portuguese
+Europe,Greece,Athens,EUR,Greek
+Europe,Russia,Moscow,RUB,Russian
+Africa,Nigeria,Abuja,NGN,English
+Africa,South Africa,Pretoria,ZAR,Zulu/Xhosa/Afrikaans/English
+Africa,Egypt,Cairo,EGP,Arabic
+Africa,Kenya,Nairobi,KES,Swahili/English
+Africa,Ethiopia,Addis Ababa,ETB,Amharic
+Africa,Ghana,Accra,GHS,English
+Africa,Tanzania,Dodoma,TZS,Swahili/English
+Africa,Morocco,Rabat,MAD,Arabic/Berber
+Africa,Senegal,Dakar,XOF,French
+Africa,Uganda,Kampala,UGX,English/Swahili
+North America,United States,"Washington, D.C.",USD,English
+North America,Canada,Ottawa,CAD,English/French
+North America,Mexico,Mexico City,MXN,Spanish
+North America,Cuba,Havana,CUP,Spanish
+North America,Jamaica,Kingston,JMD,English
+North America,Guatemala,Guatemala City,GTQ,Spanish
+North America,Costa Rica,San José,CRC,Spanish
+North America,Panama,Panama City,PAB,Spanish
+South America,Brazil,Brasília,BRL,Portuguese
+South America,Argentina,Buenos Aires,ARS,Spanish
+South America,Colombia,Bogotá,COP,Spanish
+South America,Chile,Santiago,CLP,Spanish
+South America,Peru,Lima,PEN,Spanish/Quechua
+South America,Venezuela,Caracas,VES,Spanish
+South America,Ecuador,Quito,USD,Spanish
+South America,Bolivia,Sucre,BOB,Spanish/Quechua/Aymara
+South America,Uruguay,Montevideo,UYU,Spanish
+Oceania,Australia,Canberra,AUD,English
+Oceania,New Zealand,Wellington,NZD,English/Māori
