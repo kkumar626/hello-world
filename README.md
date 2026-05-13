@@ -1,13 +1,28 @@
 # hello-world
-Hello World repository for Git tutorial
-This is an example repository for the Git tutoial on https://www.w3schools.com
 
-This repository is built step by step in the tutorial.
+My personal sandbox — where scripts are born, ideas get tested, and nothing is too serious.
 
-This line is added on GitHub
+## What's in here
 
-This is a second line added on Github
+- **`generate_countries_csv.py`** — generates country data (capital, currency, language) across 6 continents in CSV, JSON, or Markdown format
+- **`filter_countries.py`** — filters that data by continent straight from the terminal
+- **`index.html`** — a simple webpage, just vibes
 
-This is another line on my Local Git Repo.
+## Quick start
 
-This line is added when a new branch is created locally.
+```bash
+# Generate country data
+python3 generate_countries_csv.py                   # CSV (default)
+python3 generate_countries_csv.py --format json
+python3 generate_countries_csv.py --format markdown
+
+# Filter by continent
+python3 filter_countries.py --list-continents
+python3 filter_countries.py --continent Africa
+python3 filter_countries.py --continent "South America" --input countries.json
+```
+
+## Notes to self
+
+- This is a playground. Break things, fix things, repeat.
+- Don't overthink it.
