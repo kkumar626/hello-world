@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "f=$(jq -r '.tool_input.file_path // empty'); echo \"$f\" | grep -q 'generate_countries_csv.py' && cd /mnt/c/Users/kkumar/repo/hello-world && python3 generate_countries_csv.py 2>/dev/null && echo '{\"systemMessage\": \"countries.csv regenerated automatically.\"}' || true",
+            "statusMessage": "Regenerating country data..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"systemMessage\": \"Claude is done.\"}'"
+          }
+        ]
+      }
+    ]
+  }
+}
