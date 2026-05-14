@@ -34,6 +34,7 @@ COUNTRIES = [
     {"Continent": "Europe", "Country": "Portugal", "Capital": "Lisbon", "Currency": "EUR", "Language": "Portuguese"},
     {"Continent": "Europe", "Country": "Greece", "Capital": "Athens", "Currency": "EUR", "Language": "Greek"},
     {"Continent": "Europe", "Country": "Russia", "Capital": "Moscow", "Currency": "RUB", "Language": "Russian"},
+    {"Continent": "Europe", "Country": "Georgia", "Capital": "Tbilisi", "Currency": "GEL", "Language": "Georgian"},
     # Africa
     {"Continent": "Africa", "Country": "Nigeria", "Capital": "Abuja", "Currency": "NGN", "Language": "English"},
     {"Continent": "Africa", "Country": "South Africa", "Capital": "Pretoria", "Currency": "ZAR", "Language": "Zulu/Xhosa/Afrikaans/English"},
@@ -67,6 +68,8 @@ COUNTRIES = [
     # Oceania
     {"Continent": "Oceania", "Country": "Australia", "Capital": "Canberra", "Currency": "AUD", "Language": "English"},
     {"Continent": "Oceania", "Country": "New Zealand", "Capital": "Wellington", "Currency": "NZD", "Language": "English/Māori"},
+    {"Continent": "Oceania", "Country": "Fiji", "Capital": "Suva", "Currency": "FJD"},
+    {"Continent": "Oceania", "Country": "Papua New Guinea", "Capital": "Port Moresby", "Currency": "PGK", "Language": "English/Tok Pisin/Hiri Motu"},
 ]
 
 FIELDS = ["Continent", "Country", "Capital", "Currency", "Language"]
