@@ -55,9 +55,11 @@ def print_table(rows):
 
 
 def find_input_file():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
     for candidate in ["countries.csv", "countries.json"]:
-        if os.path.exists(candidate):
-            return candidate
+        path = os.path.join(script_dir, candidate)
+        if os.path.exists(path):
+            return path
     return None
 
 
