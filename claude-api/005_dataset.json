@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Write a Python function that takes a list of closing prices and returns the Simple Moving Average (SMA) for a given window size.",
+    "format": "python"
+  },
+  {
+    "task": "Write a JSON object representing a trading bot configuration that includes fields for exchange name, trading pair, order type, risk percentage per trade, and stop loss percentage.",
+    "format": "json"
+  },
+  {
+    "task": "Write a regular expression that matches a valid trading pair symbol such as BTC/USDT, ETH/BTC, or SOL/USD, where both the base and quote currencies are 2 to 5 uppercase letters separated by a forward slash.",
+    "format": "regex"
+  }
+]

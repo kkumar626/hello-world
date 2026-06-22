@@ -1,0 +1,49 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "172",
+      "weight": "68",
+      "age": "32",
+      "dietary_restrictions": "vegan, gluten-free, nut allergies"
+    },
+    "solution_criteria": [
+      "All meals are vegan with no animal products",
+      "All meals are gluten-free with no wheat, barley, or rye",
+      "No tree nuts or peanuts in any meal",
+      "Meal plan is compact and covers breakfast, lunch, and dinner"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an individual.",
+    "scenario": "Testing with dietary restrictions: Create a 1-day meal plan for someone with multiple constraints (vegan, gluten-free, and nut allergies) to verify the prompt respects and incorporates all specified limitations"
+  },
+  {
+    "prompt_inputs": {
+      "height": "170",
+      "weight": "70",
+      "age": "35",
+      "dietary_restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan uses only these 7 pantry staples: rice, beans, eggs, onions, salt, oil, and canned tomatoes",
+      "Includes three distinct meals (breakfast, lunch, dinner) that are practical and edible",
+      "All meals are nutritionally balanced and appropriate for the individual's profile"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an individual.",
+    "scenario": "Testing with minimal ingredient availability: Generate a meal plan for someone with access to only 5-7 basic pantry staples to assess whether the prompt creates practical, realistic meals within tight resource constraints"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "age": "28",
+      "dietary_restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan includes 4-5 meals/snacks distributed throughout the day",
+      "Provides high protein content (minimum 1.6g per kg body weight) suitable for endurance training",
+      "Includes at least 3 different meals with varied food sources",
+      "All meals are practical and quick to prepare"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for an individual.",
+    "scenario": "Testing with specific health/fitness goals: Create a 1-day meal plan for an individual training for endurance athletics with specific macronutrient targets (high protein, moderate carbs) to verify the prompt balances nutritional requirements with meal variety"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "output": "```json\n[\n  \"bioaccumulation of heavy metals\",\n  \"aquatic ecosystems\",\n  \"toxicology\",\n  \"aquatic chemistry\",\n  \"environmental health\",\n  \"lead\",\n  \"cadmium\",\n  \"complexation\",\n  \"dissolved organic matter\",\n  \"freshwater systems\",\n  \"metal speciation\",\n  \"bioavailability\",\n  \"phytoplankton\",\n  \"zooplankton\",\n  \"active transport\",\n  \"metal-ligand complexes\",\n  \"trophic transfer\",\n  \"food webs\",\n  \"biomagnification\",\n  \"predatory fish\",\n  \"sediment-bound metals\",\n  \"redox transformations\",\n  \"anaerobic conditions\",\n  \"benthic layers\",\n  \"water column\",\n  \"pH-dependent equilibrium\",\n  \"metal hydroxide precipitation\",\n  \"dissolution\",\n  \"remediation\",\n  \"contaminated watersheds\",\n  \"microbial communities\",\n  \"methylation pathways\",\n  \"organometal compounds\",\n  \"neurotoxicity\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The bioaccumulation of heavy metals in aquatic ecosystems represents a critical intersection of toxicology, aquatic chemistry, and environmental health. When dissolved lead and cadmium ions undergo complexation with dissolved organic matter in freshwater systems, their speciation directly influences bioavailability to phytoplankton and zooplankton populations. These microorganisms incorporate the metal-ligand complexes through active transport mechanisms, initiating trophic transfer through food webs where biomagnification occurs in predatory fish species. Simultaneously, sediment-bound metals undergo redox-driven transformations when anaerobic conditions develop in benthic layers, converting insoluble forms back into mobile ionic species that re-enter the water column. The pH-dependent equilibrium between metal hydroxide precipitation and dissolution further complicates remediation efforts in contaminated watersheds, as does the role of microbial communities in mediating methylation pathways that enhance neurotoxic organometal compound formation."
+      },
+      "solution_criteria": [
+        "Extracts at least 8 distinct topics spanning biology, chemistry, and environmental science domains",
+        "Distinguishes between related but separate concepts (e.g., bioaccumulation vs. biomagnification, complexation vs. speciation)",
+        "Returns output as a valid JSON array of strings with no additional formatting"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings.\",\n    ",
+      "scenario": "Testing with a dense interdisciplinary passage containing multiple overlapping topics (biology, chemistry, and environmental science) to evaluate whether the prompt can distinguish and extract distinct concepts from interconnected subjects"
+    },
+    "score": 10,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it contains a valid JSON array of strings with only topics (no commentary), each topic is extracted from the passage, and the response contains only the JSON array with no additional text. It exceeds the secondary criteria by extracting 34 topics (well above the minimum of 8) across multiple scientific domains and clearly distinguishing between related concepts like bioaccumulation/biomagnification and complexation/speciation. The extraction is thorough and accurate, capturing both major themes and important supporting concepts from the passage."
+  },
+  {
+    "output": "```json\n[\"CRISPR-Cas9 gene editing\", \"molecular biology research\", \"NHEJ (non-homologous end joining)\", \"HDR (homology-directed repair)\", \"DNA double-strand break repair\", \"off-target mutagenesis\", \"high-fidelity Cas9 variants\", \"paired nickases\", \"specificity in mammalian cells\", \"therapeutic applications\", \"genetic disorders\", \"delivery mechanisms\", \"immune responses\", \"germline editing\", \"ethical considerations\", \"regulatory frameworks\"]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in CRISPR-Cas9 gene editing have revolutionized molecular biology research. The NHEJ (non-homologous end joining) and HDR (homology-directed repair) pathways compete during DNA double-strand break repair, with implications for off-target mutagenesis rates. Additionally, the development of high-fidelity Cas9 variants and paired nickases has significantly improved specificity in mammalian cells. These innovations have enabled therapeutic applications in treating genetic disorders, though challenges remain in delivery mechanisms and immune responses to the Cas9 protein. Furthermore, ethical considerations regarding germline editing and regulatory frameworks continue to shape the field's trajectory."
+      },
+      "solution_criteria": [
+        "Extracts high-level topics (e.g., gene editing, DNA repair pathways, therapeutic applications, ethical considerations) rather than focusing on technical acronyms or specialized terminology",
+        "Avoids listing acronyms (CRISPR, NHEJ, HDR, Cas9) as standalone topics while capturing the concepts they represent",
+        "Identifies distinct subject areas covered in the passage without over-fragmentation"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings.\",\n    ",
+      "scenario": "Testing with a passage containing domain-specific jargon and acronyms to assess whether the prompt extracts high-level topics rather than being distracted by technical terminology or abbreviations"
+    },
+    "score": 5,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings with only topics and no additional commentary. However, it significantly violates the secondary criteria by including technical acronyms and specialized terminology as standalone topics (NHEJ, HDR, paired nickases) rather than capturing the broader concepts they represent. The criteria explicitly state to 'avoid listing acronyms as standalone topics while capturing the concepts they represent' and to extract 'high-level topics' rather than 'technical acronyms or specialized terminology.' The solution also exhibits over-fragmentation with 16 topics when the passage covers fewer distinct subject areas. While the extraction is comprehensive, it prioritizes technical specificity over the requested high-level conceptual organization."
+  },
+  {
+    "output": "```json\n[\"CRISPR-Cas9 gene editing\", \"sickle cell disease\", \"base editing\", \"point mutations\", \"\u03b2-globin gene\", \"hemoglobin polymerization\", \"adeno-associated viral vectors\", \"hematopoietic stem cells\", \"ex vivo editing\", \"off-target effects\", \"hemoglobin levels\", \"vaso-occlusive episodes\"]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study investigates the role of CRISPR-Cas9 gene editing in correcting mutations associated with sickle cell disease. We employed base editing techniques to precisely target and modify the point mutations in the \u03b2-globin gene responsible for hemoglobin polymerization. Our methodology involved delivering the CRISPR components via adeno-associated viral vectors to hematopoietic stem cells ex vivo, achieving editing efficiency of 78% without off-target effects. The edited cells were then reintroduced into patient models, resulting in normalized hemoglobin levels and reduced vaso-occlusive episodes."
+      },
+      "solution_criteria": [
+        "Extracts primary research focus (CRISPR-Cas9 gene editing for sickle cell disease) without fragmenting into redundant subtopics",
+        "Identifies key methodological topics (base editing, \u03b2-globin gene targeting, viral vector delivery) as distinct topics",
+        "Does not create false distinctions between closely related concepts (e.g., separating 'hemoglobin polymerization' and 'sickle cell disease' as independent topics)",
+        "Returns results as a JSON array of strings"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings.\",\n    ",
+      "scenario": "Testing with a short, tightly-focused passage on a single narrow topic to verify the prompt correctly identifies focused research areas and doesn't over-extract or create false topic distinctions"
+    },
+    "score": 7,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no additional commentary. However, it violates the secondary criterion about not creating false distinctions between closely related concepts. 'Hemoglobin polymerization' is the pathological mechanism underlying sickle cell disease, not an independent topic. Similarly, 'hemoglobin levels' is an outcome measure rather than a research topic. The inclusion of 'ex vivo editing' as distinct from the delivery method creates minor redundancy. Despite these issues with secondary criteria, the solution captures the essential topics and demonstrates good understanding of the content."
+  },
+  {
+    "output": "```json\n[\"microbial communities\", \"metabolic interactions\", \"biofilms\", \"wastewater treatment\", \"bacterial species\", \"survival rates\", \"acidic environments\", \"pH levels\", \"enzymatic pathways\", \"polymer degradation\", \"horizontal gene transfer\", \"spatial organization\", \"nutrient gradients\", \"oxygen sources\", \"communication networks\", \"signaling molecules\"]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in microbial communities have revealed fascinating patterns in their metabolic interactions. When researchers examined biofilms from industrial wastewater treatment systems, they discovered that certain bacterial species exhibited enhanced survival rates in acidic environments, while simultaneously producing compounds that altered pH levels for neighboring organisms. The enzymatic pathways involved in degrading complex polymers appeared to be shared across multiple species through horizontal gene transfer mechanisms. Furthermore, the spatial organization within these biofilms correlated with nutrient gradients, suggesting that physical proximity to oxygen sources influenced which microorganisms thrived in specific zones. These observations hint at sophisticated communication networks operating at microscopic scales, though the precise signaling molecules remain unidentified."
+      },
+      "solution_criteria": [
+        "Identifies implicit main topics that are woven throughout the passage rather than explicitly stated as topic sentences",
+        "Synthesizes scattered references into cohesive topic categories (e.g., recognizing discussions of bacterial survival, gene transfer, and spatial organization as aspects of microbial ecology)",
+        "Outputs results as a valid JSON array of strings"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings.\",\n    ",
+      "scenario": "Testing with a passage where topics are implicit or scattered throughout rather than explicitly stated, requiring the prompt to infer and synthesize main subjects from context clues"
+    },
+    "score": 6,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no additional commentary. However, it falls short on the secondary criteria requiring synthesis of scattered references into cohesive topic categories. The solution lists individual topics extracted from the text but doesn't demonstrate the higher-level synthesis expected by the criteria. For example, 'bacterial species', 'survival rates', 'acidic environments', 'spatial organization', and 'nutrient gradients' could be synthesized under 'microbial ecology' or 'biofilm ecology'. The solution is more of a comprehensive extraction than a synthesized categorization, which represents a significant deficiency in meeting the secondary criteria despite passing mandatory requirements."
+  }
+]

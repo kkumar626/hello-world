@@ -1,0 +1,34 @@
+[
+  {
+    "task": "Create a JSON configuration for an AWS Lambda function that sets up a basic Python runtime with a memory allocation of 512 MB and a timeout of 10 seconds",
+    "format": "json",
+    "solution_criteria": "Must include runtime, memory size, and timeout and basic structure of a AWS Lambda configuration.",
+    "solution": {
+      "FunctionName": "MyPythonLambdaFunction",
+      "Runtime": "python3.11",
+      "Role": "arn:aws:iam::123456789012:role/lambda-execution-role",
+      "Handler": "lambda_function.lambda_handler",
+      "MemorySize": 512,
+      "Timeout": 10,
+      "Description": "A basic Python Lambda function with 512MB memory and 10 second timeout",
+      "Environment": {
+        "Variables": {
+          "ENV": "production"
+        }
+      },
+      "Tags": {
+        "Project": "MyProject",
+        "Environment": "Production"
+      },
+      "TracingConfig": {
+        "Mode": "PassThrough"
+      },
+      "Architectures": [
+        "x86_64"
+      ],
+      "EphemeralStorage": {
+        "Size": 512
+      }
+    }
+  }
+]
