@@ -1,0 +1,29 @@
+name: Epic Free Games Notifier
+
+on:
+  schedule:
+    # 00:00 UTC every Friday = 8:00 AM Malaysia time (UTC+8)
+    - cron: '0 0 * * 5'
+  workflow_dispatch: {}   # lets you manually trigger a test run from GitHub's UI
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run notifier script
+        env:
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
+        run: python epic-newgame-fetch/notify_free_games.py
