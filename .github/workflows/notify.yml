@@ -1,10 +1,7 @@
 name: Epic Free Games Notifier
 
 on:
-  schedule:
-    # 00:00 UTC every Friday = 8:00 AM Malaysia time (UTC+8)
-    - cron: '0 0 * * 5'
-  workflow_dispatch: {}   # lets you manually trigger a test run from GitHub's UI
+  workflow_dispatch: {}   # triggered externally by cron-job.org every Friday at 00:05 UTC
 
 jobs:
   notify:
